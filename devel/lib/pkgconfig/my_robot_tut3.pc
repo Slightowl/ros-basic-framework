@@ -1,0 +1,8 @@
+prefix=/home/sam-robotics/Desktop/catkin_ws/devel
+
+Name: my_robot_tut3
+Description: Description of my_robot_tut3
+Version: 0.0.0
+Cflags: -I/home/sam-robotics/Desktop/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,11 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_samrobotics_virtualbox__36341: http://samrobotics-VirtualBox:36341/
+rosversion: '1.15.9
+
+  '
+run_id: 8d5be41a-960d-11eb-8f9a-5fdd8472bc3b
+wheel_radius: 0.2

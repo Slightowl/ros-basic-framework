@@ -1,0 +1,3 @@
+<launch>
+  <node name="rpm_pub_node" pkg="my_robot_tut3" type="rpm_pub.py" />
+</launch>
