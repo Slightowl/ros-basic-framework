@@ -1,8 +1,0 @@
-prefix=/home/sam-robotics/Desktop/catkin_ws/install
-
-Name: my_robot_tut2
-Description: Description of my_robot_tut2
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -8,6 +8,15 @@ import cv2
 from cv_bridge import CvBridge
 
 def configure_request(angle):
+    """Short summary.
+
+    Args:
+        angle (type): Description of parameter `angle`.
+
+    Returns:
+        type: Description of returned object.
+
+    """
     rospy.wait_for_service("turn_camera")
     try:
         Service_proxy = rospy.ServiceProxy("turn_camera", TurnCamera)

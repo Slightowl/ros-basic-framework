@@ -4,6 +4,10 @@ import rospy
 from geometry_msgs.msg import Point
 
 def robot_point_pub(user_coords):
+    """robot_point_pub summary.
+    Args:
+        user_coords (float array): Takes in user inputted coordinates.
+    """
     pub = rospy.Publisher("robot/point", Point, queue_size=10)
     print("Publishing")
     rate = rospy.Rate(1)
@@ -11,6 +15,7 @@ def robot_point_pub(user_coords):
         pub.publish(Point(x=user_coords[0], y = user_coords[1], z = user_coords[2]))
         rate.sleep()
 
+# prompt user for coordinates which are assigned into a float array
 if __name__ == "__main__":
     try:
         rospy.init_node("robot_point_pub_node")

@@ -8,9 +8,20 @@ from my_robot_tut3.msg import Navigate2DAction, Navigate2DFeedback, Navigate2DRe
 from geometry_msgs.msg import Point
 
 def feedback_callback(feedback):
+    """feedback_callback summary.
+    Args:
+        feedback (string): Takes feedback from Navigate2DFeedback
+        and prints distance_to_point value.
+    """
     print("Distance to Goal: " + str(feedback.distance_to_point))
 
 def nav_client(user_coords):
+    """nav_client summary.
+    Args:
+        user_coords (float): inputted coordinate values by user.
+    Returns:
+        type: returns value from client.
+    """
     client = actionlib.SimpleActionClient("navigate_2D_action", Navigate2DAction)
     client.wait_for_server()
     point_msg = Point(x = user_coords[0], y = user_coords[1], z = user_coords[2])

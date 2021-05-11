@@ -2,6 +2,9 @@ import rospy
 from std_msgs.msg import String
 
 def hello_world_pub():
+    """hello_world_pub summary.
+    initialise node and increment up to rate 5
+    """
     rospy.init_node("hello_world_pub_node")
     pub = rospy.Publisher("hello_world", String, queue_size=10)
     i = 0

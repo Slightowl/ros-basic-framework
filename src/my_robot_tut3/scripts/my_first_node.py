@@ -1,5 +1,7 @@
 import rospy
 
+# simple node exmaple which prints hello world
+
 if __name__ == '__main__':
     rospy.init_node('my_first_python_node')
     rospy.loginfo('node is running')
