@@ -7,6 +7,14 @@ showcase the intial foundations of the server/ client nature
 in ROScore nodes. Finally I have built upon these tutorials
 to create a robot of my own which performs a complex action.
 
+# description of additional features added
+The feature I added was in the turn_camera_client.py file
+(lines 27 - 45), The robot camera now tries to identify if
+there are any humans in the work vicinity. If a human is detected
+a warning will flag that "human is in the work area!"
+<br/>
+To test this : check the camera angle: '15'
+
 # system requirements
 ### Ubuntu 20.04.1 LTS ###
 ### Python 3.8.5 (minimum) ###
@@ -23,7 +31,7 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 ### Make sure your linux machine is up  to date: ###
 sudo apt update
 
-## #Install ROS: ###
+### Install ROS: ###
 sudo apt install ros-noetic-desktop-full
 
 ### Environment setup in bash: ###
@@ -39,4 +47,8 @@ rosdep update
 
 ### further documentation ###
 For more advanced ROS documentation check: wiki.ros.org/Documentation
+
+
+
+
 
